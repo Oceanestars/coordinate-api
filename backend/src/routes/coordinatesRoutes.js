@@ -1,10 +1,9 @@
-import addNewCoordinates from '../controllers/coordinatesController'
+import {addNewCoordinates,getCoordinates} from '../controllers/coordinatesController'
 const routes = (app) => {
     //create route for donations
     app.route('/lla')
       //create get request
-      .get((req, res) =>
-      res.send('GET request successful!'))
+      .get(getCoordinates)
       //create post request
     //   .post((req, res) =>
     //   res.send('POST request successful!'))

@@ -1,16 +1,20 @@
 import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
-export const InputDataSchema = new Schema({
+export const CoordinatesSchema = new Schema({
+  timestamp: {
+    type: mongoose.Types.Decimal128,
+    required: "Enter timestamp"
+  },
   latitude: {
-    type: Number,
+    type: mongoose.Types.Decimal128,
     required: "Enter latitude"
   },
   longitude: {
-    type: Number,
+    type: mongoose.Types.Decimal128,
     required: "Enter longitude"
   },
   altitude: {
-    type: Number,
+    type: mongoose.Types.Decimal128,
     required: "Enter altitude"
   },
   ecef: {
