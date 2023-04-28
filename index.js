@@ -15,7 +15,7 @@ app.listen(PORT, () =>
 console.log(`Your server is running on port ${PORT}`))
 
 // Database Setup
-
+mongodb://localhost:27017
 // mongoose connection
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost:27017/coordinates', {
